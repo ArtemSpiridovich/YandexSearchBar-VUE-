@@ -2,7 +2,7 @@
     <div :class="classSI ? 'first' : 'two'">
         <div>
           <span>
-            <input v-model="valueI" @keyup.enter="startSearch" type="text"/>
+            <input  :ref="'input'" v-model="valueI" @keyup.enter="startSearch" autofocus type="text"/>
             <span class="deleteBtn"
                   @click="deleteVal"
                   v-if="valueI.length>1">×</span>
@@ -35,6 +35,9 @@
             },
             deleteVal() {
                 this.valueI = ''
+              this.$nextTick(() => {
+                this.$refs['input'].focus();
+              });
             }
         }
 
