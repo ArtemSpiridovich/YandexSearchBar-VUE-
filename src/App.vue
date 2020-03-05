@@ -26,18 +26,18 @@
                 state: [
                     {
                         'name': 'vk.com',
-                        'data': [["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"],
-                            ["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"],
-                            ["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"]]
+                        'data': [["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf", 0],
+                            ["VKontacte", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf", 1],
+                            ["VK.com", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf", 2]]
                     },
                     {
                         'name': 'instagramm',
-                        'data': [["Instagramm", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn"],
-                            ["Instagramm", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn"]]
+                        'data': [["Insta", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn", 0],
+                            ["Instagramm", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn", 1]]
                     },
                     {
                         'name': 'telegramm',
-                        'data': [["Telegramm", "https://telegram.org/", "khtxjyxkx.jhcktdlig uyfouydfiyt dliydkytdlyu dkytsdkuy"]]
+                        'data': [["Telegramm", "https://telegram.org/", "khtxjyxkx.jhcktdlig uyfouydfiyt dliydkytdlyu dkytsdkuy", 0]]
                     }
                 ],
                 viewMode: true,
@@ -74,7 +74,7 @@
 
 <style>
     #app {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        min-height: 100vh;
     }
 </style>

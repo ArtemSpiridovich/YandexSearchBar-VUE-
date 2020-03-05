@@ -3,15 +3,15 @@
         <div>
             <div class="text">
                 <span class="yandex">Яндекс</span>
-                <div class="inputAndBtn"><input :ref="'input'" v-model="valueI" @keyup.enter="startSearch" autofocus type="text"/>
+                <form @submit.prevent="" class="inputAndBtn"><input :ref="'input'" v-model="valueI" @keyup.enter="startSearch" autofocus type="text"/>
                     <span class="deleteBtn"
                           @click="deleteVal"
                           v-if="valueI.length>1">×</span>
                     <button @click="startSearch">Search</button>
-                </div>
+                </form>
             </div>
         </div>
-        <span>{{wordForSearch}}</span>
+        <span class="result">{{wordForSearch}}</span>
     </div>
 </template>
 
@@ -62,7 +62,8 @@
     }
 
     .two {
-        height: 150px;
+        width: max-content;
+        height: 151px;
         padding-left: 30px;
     }
 
@@ -112,13 +113,21 @@
         margin-right: 10px;
     }
 
+    .yandex:first-letter {
+        color: red;
+    }
+
     .text {
         font-family: 'Arial', sans-serif;
         font-weight: 400;
         font-size: 3rem;
         display: flex;
         align-items: center;
-        
+    }
+
+    .result {
+        display: flex;
+        justify-content: center;
     }
 
     .deleteBtn {
