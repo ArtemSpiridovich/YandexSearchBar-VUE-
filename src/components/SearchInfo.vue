@@ -1,13 +1,15 @@
 <template>
-    <div :class="classSI ? 'first' : 'two'">
+    <div class="contentSearchBar" :class="classSI ? 'first' : 'two'">
         <div>
-          <span>
-            <input  :ref="'input'" v-model="valueI" @keyup.enter="startSearch" autofocus type="text"/>
-            <span class="deleteBtn"
-                  @click="deleteVal"
-                  v-if="valueI.length>1">×</span>
-          </span>
-            <button @click="startSearch">Search</button>
+            <div class="text">
+                <span class="yandex">Яндекс</span>
+                <div class="inputAndBtn"><input :ref="'input'" v-model="valueI" @keyup.enter="startSearch" autofocus type="text"/>
+                    <span class="deleteBtn"
+                          @click="deleteVal"
+                          v-if="valueI.length>1">×</span>
+                    <button @click="startSearch">Search</button>
+                </div>
+            </div>
         </div>
         <span>{{wordForSearch}}</span>
     </div>
@@ -35,9 +37,9 @@
             },
             deleteVal() {
                 this.valueI = ''
-              this.$nextTick(() => {
-                this.$refs['input'].focus();
-              });
+                this.$nextTick(() => {
+                    this.$refs['input'].focus();
+                });
             }
         }
 
@@ -47,35 +49,84 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .first {
+    .contentSearchBar {
         width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .first {
         align-items: center;
     }
 
     .two {
-        width: 100vw;
         height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         padding-left: 30px;
     }
 
-    div span {
+    .inputAndBtn {
         position: relative;
+        padding-bottom: 10px;
+    }
+
+    input {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 40px;
+        width: 250px;
+        border: 2px solid #fc0;
+        border-radius: 4px;
+        background: #fff;
+        outline: none;
+        padding-left: 11px;
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    button {
+        outline: none;
+        width: 80px;
+        height: 40px;
+        padding: 2px 0 2px 5px;
+        font: 16px/35px arial, sans-serif;
+        border: none;
+        background-color: #fc0;
+        position: relative;
+        border-radius: 0 2px 2px 0;
+    }
+
+    button::after {
+        content: '';
+        position: absolute;
+        background-color: #fc0;
+        width: 4px;
+        height: 40px;
+        left: -4px;
+        top: 0;
+    }
+
+    .yandex {
+        margin-right: 10px;
+    }
+
+    .text {
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        
     }
 
     .deleteBtn {
         cursor: pointer;
         width: 22px;
         position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
+        right: 87px;
+        top: 21px;
         display: flex;
         justify-content: center;
         align-items: center;

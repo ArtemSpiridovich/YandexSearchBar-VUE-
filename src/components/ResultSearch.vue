@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="content">
-            <h2>{{resultSearch[0]}}</h2>
-            <a :href="resultSearch[1]" target="_blank">{{resultSearch[1]}}</a>
-            <span>{{resultSearch[2]}}</span>
+        <div class="content" :key="item" v-for="item in resultSearch">
+            <div ><h2>{{item[0]}}</h2>
+                <a :href="item[1]" target="_blank">{{item[1]}}</a>
+                <span>{{item[2]}}</span></div>
         </div>
     </div>
 </template>

@@ -26,15 +26,18 @@
                 state: [
                     {
                         'name': 'vk.com',
-                        'data': ["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"]
+                        'data': [["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"],
+                            ["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"],
+                            ["VK", "https://vk.com/login?u=2&to=YWxfaW0ucGhwP3NlbD0xMjM4MDc4MTU-", "social-networkfsadjfsd;lfajksnv;kxjz;osauhdf"]]
                     },
                     {
                         'name': 'instagramm',
-                        'data': ["Instagramm", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn"]
+                        'data': [["Instagramm", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn"],
+                            ["Instagramm", "https://www.instagram.com/", "kjhgdluiugoihojh;gilfukyxjztmxcuohiku.jy,hxgmfcv.k.,jhmfgn"]]
                     },
                     {
                         'name': 'telegramm',
-                        'data': ["Telegramm", "https://telegram.org/", "khtxjyxkx.jhcktdlig uyfouydfiyt dliydkytdlyu dkytsdkuy"]
+                        'data': [["Telegramm", "https://telegram.org/", "khtxjyxkx.jhcktdlig uyfouydfiyt dliydkytdlyu dkytsdkuy"]]
                     }
                 ],
                 viewMode: true,
