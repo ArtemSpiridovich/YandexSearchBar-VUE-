@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="content" :key="item[3]" v-for="item in resultSearch">
-            <div ><a :href="item[1]"><h2>{{item[0]}}</h2></a>
+            <div ><a :href="item[1]" target="_blank"><h2>{{item[0]}}</h2></a>
                 <a class="href" :href="item[1]" target="_blank">{{item[1]}}</a>
                 <span>{{item[2]}}</span></div>
         </div>
